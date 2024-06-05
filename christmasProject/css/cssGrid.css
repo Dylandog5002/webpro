@@ -1,0 +1,199 @@
+/* CSS Grid Document */
+body, div, h1, h2, h3, h4, h5, h6, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background:#235E6F;
+    color: #FFF;
+    font-size: 1.5em;
+}
+
+
+header {
+    padding: 2em 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.cssGrid {
+    display: block;
+    width: 150%;
+	background-image: url(https://live.staticflickr.com/7529/16082167601_bfcb9bb80f_b.jpg)
+}
+
+#item1 {
+    background-color: #CC231E;
+    min-height: 300px;
+    padding: 5% 2% 3% 2%;
+	color:white;
+	text-align: center;
+}
+#item2 {
+    background-color: #235E6F;
+    min-height: 300px;
+    padding: 5% 2% 3% 2%;
+	color:white;
+}
+
+#item3 {
+    background-color: #235E6F;
+    min-height: 300px;
+    padding: 5% 2% 3% 2%;
+	color:white;
+}
+
+#item4 {
+    background-color:#CC231E ;
+    min-height: 300px;
+    padding: 5% 2% 3% 2%;
+	color:white;
+}
+#item5 {
+    background-color:#CC231E;
+    min-height: 300px;
+    padding: 5% 2% 3% 2%;
+	color:white;
+}
+
+#item6 {
+    background-color: #235E6F;
+    min-height: 300px;
+    padding: 5% 2% 3% 2%;
+	color:white;
+}
+
+#item7 {
+    background-color:#235E6F ;
+    min-height: 300px;
+    padding: 5% 2% 3% 2%;
+	color:white;
+}
+
+#item8 {
+    background-color: #CC231E;
+    min-height: 300px;
+    padding: 5% 2% 3% 2%;
+	color:white;
+}
+
+#item9 {
+    background-color: #CC231E;
+    min-height: 300px;
+    padding: 5% 2% 3% 2%;
+	color:white;
+}
+
+
+/* Start CSS Grid Code here */
+    
+    /* Media Query Tablet */
+    @media screen and (min-width : 341px ){
+		
+		/*Apply CSS Grid */
+		.cssGrid{
+			display: grid;
+			width: 100%;
+			grid-template-columns: 45% 45%;
+			grid-template-areas: 
+				"it1 it2 it3"
+				"it4 it5 it6"
+				"it7 it8 it9";
+			
+		   grid-gap: 1% 1%;
+			margin: 10% 0;
+			justify-content: center;
+		}
+		
+		#item1{
+		grid-area:it1;
+		background-color: #0206FC;
+		border: 2px #fe7f2d solid;
+	    text-align: center;
+		}
+		
+		#item2{
+		grid-area:it2;	
+		background-color: #CC231E;
+		border: 2px #fe7f2d solid;
+		text-align: center;
+		}
+		
+		#item3{
+		grid-area:it3;	
+		background-color: #0206FC;
+		border: 2px #fe7f2d solid;
+		}
+		
+		#item4{
+		grid-area:it4;	
+		background-color: #CC231E;
+		border: 2px #fe7f2d solid;
+		}
+		
+		#item5{
+		grid-area:it5;	
+		background-color: #0206FC;
+		border: 2px #fe7f2d solid;
+		}
+		
+		#item6{
+		grid-area:it6;	
+		background-color: #CC231E;
+		border: 2px #fe7f2d solid;	
+		}
+		
+		#item7{
+			grid-area:it7;
+		background-color: #0206FC;
+		border: 2px #fe7f2d solid;
+		}
+		
+		
+		#item8{
+			
+		grid-area:it8;
+		background-color: #CC231E;
+		}
+		
+		
+		#item9{
+			
+		grid-area:it9;
+		background-color: #0206FC;
+		border: 2px #fe7f2d solid;
+		}
+		
+		
+	
+    } /* Closing Media Query Tablet */
+    
+    /* Media Query Desktop */
+    @media screen and (min-width : 1083px ){
+        
+    } /* Closing Media Query Desktop */
+    
+    /* Media Query Large Screen */
+    @media screen and (min-width: 1250px) {
+		.cssGrid{
+			width: 1250px;
+			margin: 0 auto;
+			
+		}
+    }
+    
+/* End CSS Grid Code here */
+
+footer {
+    width: 100%;
+    padding: 5% 0 10% 0;
+    font-size: .75em;
+    text-align: center;
+    background-color: #FE7F2D;
+    color: #233D4D;
+    
+}
